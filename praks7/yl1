@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#Yl1 Praks 7 KevinTropin
+#
+echo -n "Sisestage vanus: "
+read vanus
+if test $vanus -ge 0 -a $vanus -lt 11
+then 
+echo "laps"
+elif test $vanus -ge 11 -a $vanus -lt 18
+then
+echo "nooruk"
+elif test $vanus -ge 18 -a $vanus -lt 65
+then
+echo "Täiskasvanu"
+elif test $vanus -ge 65
+then 
+echo "Senjoor
+else 
+echo "vigane sisend"
+fi
+#
+#Skripti lõpetamine
