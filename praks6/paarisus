@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Praks 6 Kevin Tropin Paarisus
+#
+echo -n "Sisesta täisarv: "
+read arv
+vastus=$(($arv % 2)) #Vastus 2-ga jagatuna
+if [ $vastus -eq 0 ]
+then
+echo "$arv on paaris"
+else #kui midagi muud
+echo "$arv on paaritu"
+fi
+#
+#Lõpetus
