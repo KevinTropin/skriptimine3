@@ -1,0 +1,19 @@
+#!/bin/bah
+#
+# Yl2 Praks6 Kevin Tropin
+#
+echo -n "Sisesta reisijate arv: "
+read arv
+echo -n "Sisesta kohtade arv: "
+read kohad
+bussid=$(($arv / $kohad))
+ylejaak=$(($arv % $kohad))
+
+if test $ylejaak -gt 0
+then
+bussid=$(($bussid +1))
+fi
+
+echo "Vaja on: $bussid bussi"
+#
+#Skripti lõpetamine
